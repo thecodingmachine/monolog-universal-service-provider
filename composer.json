@@ -1,0 +1,23 @@
+{
+  "name": "thecodingmachine/monolog-universal-service-provider",
+  "description": "Cross-framework module for monolog/monolog",
+  "license": "MIT",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "TheCodingMachine\\Monolog\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.0",
+    "container-interop/service-provider": "^0.3",
+    "thecodingmachine/common-factories": "dev-master",
+    "monolog/monolog": "^1.0"
+  },
+  "require-dev": {
+    "puli/cli":"^1.0",
+    "puli/composer-plugin": "^1.0"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
