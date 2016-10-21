@@ -4,6 +4,7 @@ namespace TheCodingMachine\Monolog;
 
 use Interop\Container\ContainerInterface;
 use Interop\Container\Factories\Alias;
+use Interop\Container\ServiceProvider;
 use Monolog\Handler\ErrorLogHandler;
 use Monolog\Logger;
 use Psr\Log\LoggerInterface;
