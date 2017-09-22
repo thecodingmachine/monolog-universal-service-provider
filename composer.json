@@ -11,7 +11,7 @@
   "require": {
     "php": ">=7.0",
     "container-interop/service-provider": "^0.3",
-    "thecodingmachine/common-factories": "dev-master",
+    "thecodingmachine/common-factories": "^0.3",
     "monolog/monolog": "^1.0"
   },
   "require-dev": {
