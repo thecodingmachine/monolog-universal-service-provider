@@ -14,7 +14,7 @@ composer require thecodingmachine/monolog-universal-service-provider
 
 Once installed, you need to register the [`TheCodingMachine\Monolog\MonologServiceProvider`](src/MonologServiceProvider.php) into your container.
 
-If your container supports Puli integration, you have nothing to do. Otherwise, refer to your framework or container's documentation to learn how to register *service providers*.
+If your container supports thecodingmachine/discovery integration, you have nothing to do. Otherwise, refer to your framework or container's documentation to learn how to register *service providers*.
 
 ## Introduction
 

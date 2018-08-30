@@ -2,23 +2,18 @@
 
 namespace TheCodingMachine\Monolog;
 
-use Interop\Container\ContainerInterface;
-use Interop\Container\Factories\Alias;
-use Interop\Container\ServiceProvider;
 use Monolog\Handler\ErrorLogHandler;
 use Monolog\Logger;
+use Psr\Container\ContainerInterface;
 use Psr\Log\LoggerInterface;
+use TheCodingMachine\Funky\Annotations\Factory;
+use TheCodingMachine\Funky\ServiceProvider;
 
-class MonologServiceProvider implements ServiceProvider
+class MonologServiceProvider extends ServiceProvider
 {
-    public function getServices()
-    {
-        return [
-            Logger::class => [ self::class, 'createLogger' ],
-            LoggerInterface::class => new Alias(Logger::class)
-        ];
-    }
-
+    /**
+     * @Factory(aliases={LoggerInterface::class})
+     */
     public static function createLogger(ContainerInterface $container) : Logger
     {
         $logger = new Logger('default');
